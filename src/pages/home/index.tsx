@@ -25,13 +25,17 @@ function Home() {
 
   const { elementRef, mapView } = useMapView(venue);
 
-  const { startLocation, endLocation, setStartLocation, setEndLocation } =
-    useWayfinding(mapView);
+  const {
+    startLocation,
+    endLocation,
+    setStartLocation,
+    setEndLocation,
+    clearAll,
+  } = useWayfinding(mapView);
 
   const [searchQueryStart, setSearchQueryStart] = useState("");
   const [searchQueryEnd, setSearchQueryEnd] = useState("");
-  const { selectedLocation, setSelectedLocation } =
-    useSelectedLocation(mapView);
+  const { setSelectedLocation } = useSelectedLocation(mapView);
   const [maps, setMaps] = useState<MappedinMap[]>([]);
 
   const resultsStart = useOfflineSearch(venue, searchQueryStart);
@@ -139,14 +143,6 @@ function Home() {
 
     populateMapGroups();
   }, [mapView, venue]);
-
-  const clearAll = () => {
-    setStartLocation(undefined);
-    setEndLocation(undefined);
-    setSearchQueryStart("");
-    setSearchQueryEnd("");
-    mapView?.Journey.clear(); // Assuming this method clears the drawn path
-  };
 
   return (
     <section className="flex flex-col h-screen">
