@@ -56,11 +56,11 @@ export default function useSelectedLocation(mapView: MapView | undefined) {
         mapView.setMap(polygons[0].map);
       }
 
-      // Focus on all its polygons and nodes
-      mapView.Camera.focusOn({
-        polygons,
-        nodes,
-      });
+      // // Focus on all its polygons and nodes
+      // mapView.Camera.focusOn({
+      //   polygons,
+      //   nodes,
+      // });
     }
   }, [selectedLocation, mapView]);
 
