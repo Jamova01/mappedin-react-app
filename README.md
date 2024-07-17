@@ -1,31 +1,15 @@
-# React + TypeScript + Vite
+# Mappedin Navigation App
+This project is a navigation application built with React and the Mappedin Web SDK. It allows users to search for locations within a venue, set start and end locations, and display step-by-step directions on a map.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Features
+* Venue Selection: Choose from different venue map groups and levels.
+* Search Functionality: Search for start and end locations within the venue.
+* Wayfinding: Display route information including distance and step-by-step directions.
+* Interactive Map: Click on locations to set them as start or end points, and see the path drawn on the map.
+* Zoom Controls: Easily zoom in and out on the map.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+### Installation
+Clone the repository:
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# mappedin-react-app
+git clone https://github.com/Jamova01/mappedin-react-app.git
+```
