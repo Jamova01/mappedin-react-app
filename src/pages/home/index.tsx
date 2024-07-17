@@ -31,9 +31,7 @@ function Home() {
   );
 
   const venue = useVenue(options);
-
   const { elementRef, mapView } = useMapView(venue);
-
   const {
     startLocation,
     endLocation,
@@ -66,6 +64,7 @@ function Home() {
               setStartLocation(location);
               setSearchQueryStart("");
             }}
+            className="cursor-pointer p-2 hover:bg-gray-700 rounded"
           >
             {`${result.object.name}`}
           </div>
@@ -87,6 +86,7 @@ function Home() {
               setEndLocation(location);
               setSearchQueryEnd("");
             }}
+            className="cursor-pointer p-2 hover:bg-gray-700 rounded"
           >
             {`${result.object.name}`}
           </div>
@@ -249,7 +249,7 @@ function Home() {
                 {steps.map((step, index) => (
                   <li
                     key={index}
-                    className="flex gap-2 p-2 bg-gray-800 border border-gray-600 rounded cursor-pointer"
+                    className="flex gap-2 p-2 bg-gray-800 border border-gray-600 rounded cursor-pointer hover:bg-gray-700"
                     onClick={() => console.log(step)}
                   >
                     <div className="flex justify-center items-center">
