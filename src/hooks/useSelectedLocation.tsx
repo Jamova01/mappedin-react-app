@@ -40,7 +40,6 @@ export default function useSelectedLocation(mapView: MapView | undefined) {
 
     if (selectedLocation != null) {
       const polygons = selectedLocation.polygons;
-      const nodes = selectedLocation.nodes;
 
       let hasPolygonOnCurrentMap = false;
 

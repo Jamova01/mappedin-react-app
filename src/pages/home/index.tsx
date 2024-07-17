@@ -139,7 +139,7 @@ function Home() {
 
     mapGroupSelectRef.current?.addEventListener(
       "change",
-      async (event: Event) => {
+      async () => {
         const mg = venue?.mapGroups.find(
           (mg) => mg.id === mapGroupSelectRef.current?.value
         );
