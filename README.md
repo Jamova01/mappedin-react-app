@@ -3,6 +3,7 @@
 This project is a navigation application built with React and the Mappedin Web SDK. It allows users to search for locations within a venue, set start and end locations, and display step-by-step directions on a map.
 
 ### Deployment URL
+
 The live deployment of the project is available at the following URL:
 https://main--willowy-sprite-4ddc98.netlify.app/
 
